@@ -8,9 +8,9 @@
 #include <istream>
 
 //@todo: надо нормально выходить закрывать предыдущие ресурсы
-static constexpr size_t MAX_BUFFER_SIZE_READ = 46;
-static constexpr size_t MAX_BUFFER_SIZE_WRITE = 5;
-static constexpr uint8_t MAX_TASKS_IO = 5;
+static constexpr size_t MAX_BUFFER_SIZE_READ = 2150;
+static constexpr size_t MAX_BUFFER_SIZE_WRITE = 100;
+static constexpr uint8_t MAX_TASKS_IO = 20;
 int main() {
     //@todo: по хорошему чтение надо тоже через uring сделать
     char buffer_read[MAX_BUFFER_SIZE_READ];
